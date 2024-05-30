@@ -10,8 +10,16 @@ With the advent of blockchain technology, there is a unique opportunity to revol
 3. Enhance Attendee Experience: NFT tickets can offer a richer experience by including additional digital content, such as event memorabilia, exclusive access, or future benefits, all embedded within the NFT. CoinDesk highlights various case studies where NFTs have enhanced fan engagement in sports and entertainment [5].
 4. Empower Event Organizers: By decentralizing the ticketing process, event organizers have greater control over the distribution and pricing of tickets, reducing dependency on third-party vendors and increasing their revenue potential. Harvard Business Review elaborates on the benefits of decentralization in ticketing [6].
 
-# Hypothesis 
+## Hypothesis 
 We believe we can create our own application that can help event organizers create their own event flyer with the time date and location of the even with the help of AI technology. Our application will give the event creator full control of the number of tickets that will be sold including the option of buying and selling the ticket amongst other customers.
+
+# Process of Deploying 
+## Install Packages
+* 'os' for interacting with the operating system.
+* 'streamlit' for connecting to web applications
+* 'json' for transmitting data in web applications 
+* 'requests' for interacting with web APIs
+* 'openai'for accessing and integrating AI models into our applications
 
 ## References
 Verified.org: "How to Avoid Fake Tickets to Events, Flights, and More". Available at: https://www.verified.org/articles/scams/fake-ticket-scams
