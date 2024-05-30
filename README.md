@@ -21,14 +21,36 @@ We believe we can create our own application that can help event organizers crea
 * `json` for transmitting data in web applications 
 * `requests` for interacting with web APIs
 * `openai` for accessing and integrating AI models into our applications.
-
+  
+## Setting Up
 We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
 * Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
 
-Using Web3 Configuration provided us the flexibility to run the application in different environments without changing the codebase. Hence, our same code can be used with different blockchain networks by simply changing the environment variable. For example we used ganache as a testing tool for Ethereum-based blockchain. 
+Using Web3 Configuration provided us the flexibility to run the application in different environments without changing the codebase. 
+* Hence, our same code can be used with different blockchain networks by simply changing the environment variable. For example we used ganache as a testing tool for Ethereum-based blockchain. 
+
 `ganache_url = os.getenv('GANACHE_URL')`
 
 `web3 = Web3(Web3.HTTPProvider(ganache_url))`
+
+## NFT Ticket
+For the Streamlit's session state is used to store variables that need to persist across reruns of the app. This is useful for keeping user input and other data consistent.
+
+'nfts': A list to store NFT data.
+'image_url': The URL of the image to be used for the NFT.
+'num_copies': The number of copies for each NFT ticket, defaulting to 1.
+'price_per_ticket': The price for each NFT ticket, defaulting to 0.01 ETH.
+'eth_address': The Ethereum address for the transaction, initialized as an empty string.
+
+
+Create NFT Ticket:
+When the "Create NFT Ticket" button is clicked, a new NFT dictionary is created with the input values and appended to the st.session_state['nfts'] list.
+A success message is displayed.
+Display NFTs:
+
+The created NFTs are displayed with their image, number of copies, price per ticket, and Ethereum address.
+
+
 
 ## References
 Verified.org: "How to Avoid Fake Tickets to Events, Flights, and More". Available at: https://www.verified.org/articles/scams/fake-ticket-scams
