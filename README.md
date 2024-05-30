@@ -14,12 +14,18 @@ With the advent of blockchain technology, there is a unique opportunity to revol
 We believe we can create our own application that can help event organizers create their own event flyer with the time date and location of the even with the help of AI technology. Our application will give the event creator full control of the number of tickets that will be sold including the option of buying and selling the ticket amongst other customers.
 
 ## Process of Deploying 
+
 ## Install Packages
 * `os` for interacting with the operating system.
 * `streamlit` for connecting to web applications
 * `json` for transmitting data in web applications 
 * `requests` for interacting with web APIs
 * `openai` for accessing and integrating AI models into our applications.
+
+### Pinata Configuration
+`pinata_api_key = os.getenv('PINATA_API_KEY')
+pinata_secret_api_key = os.getenv('PINATA_SECRET_API_KEY')
+pinata_base_url = "https://api.pinata.cloud/"`
 
 ## References
 Verified.org: "How to Avoid Fake Tickets to Events, Flights, and More". Available at: https://www.verified.org/articles/scams/fake-ticket-scams
