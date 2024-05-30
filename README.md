@@ -25,8 +25,9 @@ We believe we can create our own application that can help event organizers crea
 We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
 * Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
 
-Using Web3 Configuration provided us the flexibility to run the application in different environments without changing the codebase. Hence, our same code can be used with different blockchain networks by simply changing the environment variable. For example we used ganache as a testing tool for Ethereum-based blockchain project. 
+Using Web3 Configuration provided us the flexibility to run the application in different environments without changing the codebase. Hence, our same code can be used with different blockchain networks by simply changing the environment variable. For example we used ganache as a testing tool for Ethereum-based blockchain. 
 `ganache_url = os.getenv('GANACHE_URL')`
+
 `web3 = Web3(Web3.HTTPProvider(ganache_url))`
 
 ## References
