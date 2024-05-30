@@ -22,10 +22,11 @@ We believe we can create our own application that can help event organizers crea
 * `requests` for interacting with web APIs
 * `openai` for accessing and integrating AI models into our applications.
 
-### Pinata Configuration
-`pinata_api_key = os.getenv('PINATA_API_KEY')
-pinata_secret_api_key = os.getenv('PINATA_SECRET_API_KEY')
-pinata_base_url = "https://api.pinata.cloud/"`
+We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
+`os.getenv('PINATA_SECRET_API_KEY')`: This function retrieves the value of the environment variable named PINATA_SECRET_API_KEY.
+* Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
+
+Web3 Configuration
 
 ## References
 Verified.org: "How to Avoid Fake Tickets to Events, Flights, and More". Available at: https://www.verified.org/articles/scams/fake-ticket-scams
