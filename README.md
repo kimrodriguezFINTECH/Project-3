@@ -1,3 +1,4 @@
+# Self Generate Event NFT for Sale with Tokenization
 ## Background
 Event management has always been a complex and multi-faceted industry, involving numerous stakeholders, significant logistical challenges, and various layers of security and verification. Traditional methods of ticketing often face problems such as fraud, counterfeiting, and unauthorized reselling, which can significantly impact the experience of event organizers and attendees alike.
 * Fraud and Counterfeiting: Ticket fraud is a significant issue, with consumers losing millions of dollars annually to counterfeit tickets. A report from Verified.org explains how scammers often sell fake tickets to high-demand events, leaving buyers without access and out of pocket [1].
