@@ -29,6 +29,7 @@ Using Web3 Configuration provided us the flexibility to run the application in d
 
 Example:
 Convert contract address to checksum format
+
 `contract_address = Web3.to_checksum_address(os.getenv('CONTRACT_ADDRESS'))`
 `with open('contract_abi.json') as f:`
 `contract_abi = json.load(f)`
