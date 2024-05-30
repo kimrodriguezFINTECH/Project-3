@@ -15,11 +15,11 @@ We believe we can create our own application that can help event organizers crea
 
 ## Process of Deploying 
 ## Install Packages
-* 'os' for interacting with the operating system.
-* 'streamlit' for connecting to web applications
-* 'json' for transmitting data in web applications 
-* 'requests' for interacting with web APIs
-* 'openai'for accessing and integrating AI models into our applications
+* `os` for interacting with the operating system.
+* `streamlit` for connecting to web applications
+* `json` for transmitting data in web applications 
+* `requests` for interacting with web APIs
+* `openai` for accessing and integrating AI models into our applications
 
 ## References
 Verified.org: "How to Avoid Fake Tickets to Events, Flights, and More". Available at: https://www.verified.org/articles/scams/fake-ticket-scams
