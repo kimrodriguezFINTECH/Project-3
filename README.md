@@ -23,10 +23,17 @@ We believe we can create our own application that can help event organizers crea
 * `openai` for accessing and integrating AI models into our applications.
 
 We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
-`os.getenv('PINATA_SECRET_API_KEY')`: This function retrieves the value of the environment variable named PINATA_SECRET_API_KEY.
-* Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
+* Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments such as `json`, xopenai`, `files` etc., and is used for best practices regarding application configuration.
 
-Web3 Configuration
+Using Web3 Configuration provided us the flexibility to run the application in different environments without changing the codebase. For example, our same code can be used with different blockchain networks by simply changing the environment variable.
+Example:
+Convert contract address to checksum format
+`contract_address = Web3.to_checksum_address(os.getenv('CONTRACT_ADDRESS'))`
+`with open('contract_abi.json') as f:`
+    `contract_abi = json.load(f)`
+`contract = web3.eth.contract(address=contract_address, abi=contract_abi)`
+
+
 
 ## References
 Verified.org: "How to Avoid Fake Tickets to Events, Flights, and More". Available at: https://www.verified.org/articles/scams/fake-ticket-scams
