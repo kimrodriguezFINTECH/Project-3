@@ -1,4 +1,4 @@
-# Self Generate Event NFT for Sale with Tokenization
+# Self Generate Event NFT for Sale 
 ## Background
 Event management has always been a complex and multi-faceted industry, involving numerous stakeholders, significant logistical challenges, and various layers of security and verification. Traditional methods of ticketing often face problems such as fraud, counterfeiting, and unauthorized reselling, which can significantly impact the experience of event organizers and attendees alike.
 * Fraud and Counterfeiting: Ticket fraud is a significant issue, with consumers losing millions of dollars annually to counterfeit tickets. A report from Verified.org explains how scammers often sell fake tickets to high-demand events, leaving buyers without access and out of pocket [1].
@@ -8,7 +8,9 @@ With the advent of blockchain technology, there is a unique opportunity to revol
 1. Eliminate Fraud and Counterfeiting: Traditional paper or digital tickets are susceptible to fraud and counterfeiting. NFTs, being unique and verifiable on the blockchain, can ensure that each ticket is authentic and tamper-proof. According to Forbes, blockchain's immutability and transparency significantly reduce fraud in ticketing [3].
 2. Prevent Unauthorized Reselling: NFT-based tickets can include smart contract rules that restrict or control the resale of tickets. This can prevent scalping and ensure tickets are sold at fair prices. TechCrunch discusses how smart contracts can enforce resale rules automatically, making them ideal for this purpose [4].
 3. Enhance Attendee Experience: NFT tickets can offer a richer experience by including additional digital content, such as event memorabilia, exclusive access, or future benefits, all embedded within the NFT. CoinDesk highlights various case studies where NFTs have enhanced fan engagement in sports and entertainment [5].
-4. Empower Event Organizers: By decentralizing the ticketing process, event organizers have greater control over the distribution and pricing of tickets, reducing dependency on third-party vendors and increasing their revenue potential. Harvard Business Review elaborates on the benefits of decentralization in ticketing [6].
+4. Empower Event Organizers: By decentralizing the ticketing process, event organizers have greater control over the distribution and pricing of tickets, reducing dependency on third-party vendors and increasing their revenue potential. Harvard Business Review elaborates on the benefits of decentralization in ticketing [6].Recently, current events have shown the importance of potential soutions to this issue. The follwing are some of the news relating to these issues:
+   "Live Nation, Ticketmaster’s parent company, sued in groundbreaking monopoly lawsuit" | CNN Businesshu May 23, 2024
+   "US sues Ticketmaster owner Live Nation and seeks break-up of alleged monopoly" |  The Guardian May 23, 2024
 
 ## Hypothesis 
 We believe we can create our own application that can help event organizers create their own event flyer with the time date and location of the even with the help of AI technology. Our application will give the event creator full control of the number of tickets that will be sold including the option of buying and selling the ticket amongst other customers.
