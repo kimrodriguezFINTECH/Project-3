@@ -75,6 +75,7 @@ The created NFTs are displayed with their image, number of copies, price per tic
 
 ![sampleimagegenerated052824](https://github.com/kimrodriguezFINTECH/Project-3/assets/152752672/0a8c1824-7aaf-4787-a71f-85027daeaeff)
 
+## Demo Explained
 
 
 ## References
