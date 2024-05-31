@@ -13,7 +13,11 @@ With the advent of blockchain technology, there is a unique opportunity to revol
 ## Hypothesis 
 We believe we can create our own application that can help event organizers create their own event flyer with the time date and location of the even with the help of AI technology. Our application will give the event creator full control of the number of tickets that will be sold including the option of buying and selling the ticket amongst other customers.
 
-## Process of Deploying 
+## Files
+* App.py
+* NFT-TICKET-TRANFERABLE.py
+* contact-api.jason
+* .env file (containing open API Key)
 
 ## Install Packages
 * `os` for interacting with the operating system.
