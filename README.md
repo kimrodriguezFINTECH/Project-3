@@ -48,7 +48,7 @@ Connecting MetaMask to a smart contract involves several steps, from setting up 
 1. Create a Wallet: Open MetaMask, and follow the instructions to create a new wallet. 
 2. Fund Your Wallet: We used Ether (ETH) in our wallet to pay for gas fees which in our case we bought ETH directly from MetaMask.
 3. Smart Contract: We ensured MetaMask is connected to the same network where our contract is deployed `contract_address = Web3.to_checksum_address(os.getenv('CONTRACT_ADDRESS'))`
-4. Install Web3.js or Ethers.js: These libraries help you interact with the Ethereum blockchain from your frontend. `contract = web3.eth.contract(address=contract_address, abi=contract_abi)`
+4. Install Web3.js or Ethers.js: These libraries help us interact with the Ethereum blockchain from our frontend. `contract = web3.eth.contract(address=contract_address, abi=contract_abi)`
 
 ## NFT Ticket
 For the Streamlit's session state is used to store variables that need to persist across reruns of the app. 
