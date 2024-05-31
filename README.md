@@ -41,9 +41,13 @@ Using Web3 Configuration provided us the flexibility to run the application in d
 For the Streamlit's session state is used to store variables that need to persist across reruns of the app. This is useful for keeping user input and other data consistent.
 
 'nfts': A list to store NFT data.
+
 'image_url': The URL of the image to be used for the NFT.
+
 'num_copies': The number of copies for each NFT ticket, defaulting to 1.
+
 'price_per_ticket': The price for each NFT ticket, defaulting to 0.01 ETH.
+
 'eth_address': The Ethereum address for the transaction, initialized as an empty string.
 
 
