@@ -38,7 +38,7 @@ Using Web3 Configuration provided us the flexibility to run the application in d
 `web3 = Web3(Web3.HTTPProvider(ganache_url))`
 
 ## NFT Ticket
-For the Streamlit's session state is used to store variables that need to persist across reruns of the app. This is useful for keeping user input and other data consistent.
+For the Streamlit's session state is used to store variables that need to persist across reruns of the app. 
 
 `nfts` : A list to store NFT data.
 
@@ -54,9 +54,13 @@ For the Streamlit's session state is used to store variables that need to persis
 Create NFT Ticket:
 When the "Create NFT Ticket" button is clicked, a new NFT dictionary is created with the input values and appended to the st.session_state['nfts'] list.
 A success message is displayed.
+
 Display NFTs:
 
 The created NFTs are displayed with their image, number of copies, price per ticket, and Ethereum address.
+`image_option = st.sidebar.radio('Select Image Option', ('Generate via AI', 'Upload Image'))`
+
+![sampleimagegenerated052824](https://github.com/kimrodriguezFINTECH/Project-3/assets/152752672/0a8c1824-7aaf-4787-a71f-85027daeaeff)
 
 
 
