@@ -30,7 +30,7 @@ We believe we can create our own application that can help event organizers crea
 * `openai` for accessing and integrating AI models into our applications.
 * `pandas` for data manipulation
   
-## Setting Up Ganache and Metamask Set Up
+## Setting Up Ganache and Metamask 
 
 We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
 * Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
