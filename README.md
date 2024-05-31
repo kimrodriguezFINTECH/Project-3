@@ -43,7 +43,7 @@ Using Web3 Configuration provided us the flexibility to run the application in d
 
 `web3 = Web3(Web3.HTTPProvider(ganache_url))`
 
-Connecting MetaMask to a smart contract involves several steps, from setting up MetaMask itself to interacting with the smart contract on the Ethereum blockchain. Below is a step-by-step guide:
+In order for us to be able to sell and buy for this event we used Metamask as our source of currency exchange. Hence, connecting MetaMask to a smart contract involves several steps, from setting up MetaMask itself to interacting with the smart contract on the Ethereum blockchain. Below is a step-by-step guide:
 
 1. Create a Wallet: Open MetaMask, and follow the instructions to create a new wallet. 
 2. Fund Your Wallet: We used Ether (ETH) in our wallet to pay for gas fees which in our case we bought ETH directly from MetaMask.
