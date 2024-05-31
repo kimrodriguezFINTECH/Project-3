@@ -52,7 +52,7 @@ For the Streamlit's session state is used to store variables that need to persis
 
 
 Create NFT Ticket:
-When the "Create NFT Ticket" button is clicked, a new NFT dictionary is created with the input values and appended to the st.session_state['nfts'] list.
+When the "Create NFT Ticket" button is clicked, a new NFT dictionary is created with the input values and appended to the `st.session_state['nfts']` list.
 A success message is displayed.
 
 Display NFTs:
