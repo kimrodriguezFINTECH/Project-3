@@ -30,8 +30,7 @@ We believe we can create our own application that can help event organizers crea
 * `openai` for accessing and integrating AI models into our applications.
 * `pandas` for data manipulation
   
-## Setting Up
-Ganache and Metamask Set Up
+## Setting Up Ganache and Metamask Set Up
 
 We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
 * Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
@@ -49,6 +48,9 @@ In order for us to be able to sell and buy for this event we used Metamask as ou
 2. Fund Your Wallet: We used Ether (ETH) in our wallet to pay for gas fees which in our case we bought ETH directly from MetaMask.
 3. Smart Contract: We ensured MetaMask is connected to the same network where our contract is deployed `contract_address = Web3.to_checksum_address(os.getenv('CONTRACT_ADDRESS'))`
 4. Install Web3.js or Ethers.js: These libraries help us interact with the Ethereum blockchain from our frontend. `contract = web3.eth.contract(address=contract_address, abi=contract_abi)`
+
+## Setting Up Contract 
+
 
 ## NFT Ticket
 For the Streamlit's session state is used to store variables that need to persist across reruns of the app. 
