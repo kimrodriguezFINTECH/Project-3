@@ -25,8 +25,11 @@ We believe we can create our own application that can help event organizers crea
 * `json` for transmitting data in web applications 
 * `requests` for interacting with web APIs
 * `openai` for accessing and integrating AI models into our applications.
+* `pandas` for data manipulation
   
 ## Setting Up
+Ganache and Metamask Set Up
+
 We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
 * Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
 
