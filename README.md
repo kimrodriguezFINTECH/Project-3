@@ -42,7 +42,7 @@ Create a Streamlit-based web application that allows users to generate AI images
 
 1. NFT Creation:
 
-• User Inputs:
+* User Inputs:
 
 - Prompt for AI Image Generation: Users can enter a text prompt to generate an image using OpenAI's API.
 
@@ -60,13 +60,13 @@ Create a Streamlit-based web application that allows users to generate AI images
 
 - NFT Minting: A Solidity smart contract is used to mint NFTs with the IPFS hash as metadata. This contract is deployed on the Ethereum blockchain, and interactions are handled using Web3.py.
 
-2.    Marketplace:
+2. Marketplace:
 
-• Listing NFTs: The app displays available NFTs with details such as cover art, number of copies, price, and transaction history.
+- Listing NFTs: The app displays available NFTs with details such as cover art, number of copies, price, and transaction history.
 
-• Purchasing NFTs: Users can input their Ethereum address to purchase NFTs. Transactions are processed using Web3.py, and ownership is transferred through the smart contract.
+- Purchasing NFTs: Users can input their Ethereum address to purchase NFTs. Transactions are processed using Web3.py, and ownership is transferred through the smart contract.
 
-• Transaction History: The app shows the transaction history for each NFT, including previous sale prices.
+- Transaction History: The app shows the transaction history for each NFT, including previous sale prices.
 
   
 ## FRONT END OF CODE 
