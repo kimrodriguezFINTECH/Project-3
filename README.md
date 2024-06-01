@@ -16,7 +16,7 @@ With the advent of blockchain technology, there is a unique opportunity to revol
    "Mention the news"^
 
 ## Hypothesis 
-We believe we can create our own application that can help event organizers create their own event flyer with the time date and location of the even with the help of AI technology. Our application will give the event creator full control of the number of tickets that will be sold including the option of buying and selling the ticket amongst other customers.
+Create a Streamlit-based web application that allows users to generate AI images or upload their own images to create NFTs (Non-Fungible Tokens). These NFTs serve as digital tickets that users can sell, and others can purchase. The app will also display the transaction history for each NFT.
 
 ## Files
 * app.py
@@ -26,13 +26,20 @@ We believe we can create our own application that can help event organizers crea
 
 ## Install Packages
 * `os` for interacting with the operating system.
-* `streamlit` for connecting to web applications
+* `streamlit` to create the web app interface.
 * `json` for transmitting data in web applications 
 * `requests` for interacting with web APIs
-* `openai` for accessing and integrating AI models into our applications.
 * `pandas` for data manipulation
+* `OpenAI` API for generating images based on user prompts.
+* `Pinata` for images on IPFS and retrieves IPFS hashes.
+* `Solidity` for Smart contract language used to create and manage NFTs.
+* `Remix` for Online IDE for writing and deploying Solidity contracts.
+* `Web3.py` Python library for interacting with Ethereum.
+* `Ganache` Personal Ethereum wallet, used to simulate transactions.
+* `Metaask` Browser extension wallet for managing Ethereum accounts and transactions.
+
   
-## Setting Up Ganache and Metamask 
+## NFT Creation 
 
 We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
 * Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
