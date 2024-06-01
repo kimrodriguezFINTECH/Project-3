@@ -38,8 +38,38 @@ Create a Streamlit-based web application that allows users to generate AI images
 * `Ganache` Personal Ethereum wallet, used to simulate transactions.
 * `Metaask` Browser extension wallet for managing Ethereum accounts and transactions.
 
+## Key Functionalities
+
+1. NFT Creation:
+
+• User Inputs:
+
+	◦ Prompt for AI Image Generation: Users can enter a text prompt to generate an image using OpenAI's API.
+
+	◦ Image Upload: Users can upload their own images if they do not want to use the AI-generated ones.
+
+	◦ Number of Copies: Users specify how many copies/tickets of the NFT they want to create.
+
+	◦ Price per Ticket: Users set the price for each NFT/ticket.
+
+	◦ Ethereum Address: Users provide their Ethereum address to receive funds from sales.
+
+	◦ Image Generation: The app uses the OpenAI API to generate an image based on the user's prompt if they choose not to upload their own image.
+
+	◦ Image Storage: The generated or uploaded image is stored on IPFS via Pinata, and an IPFS hash is obtained.
+
+	◦ NFT Minting: A Solidity smart contract is used to mint NFTs with the IPFS hash as metadata. This contract is deployed on the Ethereum blockchain, and interactions are handled using Web3.py.
+
+2.    Marketplace:
+
+• Listing NFTs: The app displays available NFTs with details such as cover art, number of copies, price, and transaction history.
+
+• Purchasing NFTs: Users can input their Ethereum address to purchase NFTs. Transactions are processed using Web3.py, and ownership is transferred through the smart contract.
+
+• Transaction History: The app shows the transaction history for each NFT, including previous sale prices.
+
   
-## NFT Creation 
+## FRONT END OF CODE 
 
 We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
 * Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
@@ -55,10 +85,15 @@ In order for us to be able to sell and buy for this event we used Metamask as ou
 
 1. Create a Wallet: Open MetaMask, and follow the instructions to create a new wallet. 
 2. Fund Your Wallet: We used Ether (ETH) in our wallet to pay for gas fees which in our case we bought ETH directly from MetaMask.
-3. Smart Contract: We ensured MetaMask is connected to the same network where our contract is deployed `contract_address = Web3.to_checksum_address(os.getenv('CONTRACT_ADDRESS'))`
-4. Install Web3.js or Ethers.js: These libraries help us interact with the Ethereum blockchain from our frontend. `contract = web3.eth.contract(address=contract_address, abi=contract_abi)`
+3. Smart Contract: We ensured MetaMask is connected to the same network where our contract is deployed
 
-## Setting Up Contract 
+`contract_address = Web3.to_checksum_address(os.getenv('CONTRACT_ADDRESS'))`
+
+4. Install Web3.js or Ethers.js: These libraries help us interact with the Ethereum blockchain from our frontend.
+
+`contract = web3.eth.contract(address=contract_address, abi=contract_abi)`
+
+## BACK END OF CODE  
 
 
 ## NFT Ticket
@@ -86,7 +121,7 @@ The created NFTs are displayed with their image, number of copies, price per tic
 
 ![sampleimagegenerated052824](https://github.com/kimrodriguezFINTECH/Project-3/assets/152752672/0a8c1824-7aaf-4787-a71f-85027daeaeff)
 
-## Demo Explained
+## Technical Explanation Demo 
 
 
 ## References
