@@ -42,7 +42,7 @@ Create a Streamlit-based web application that allows users to generate AI images
 
 1. NFT Creation:
 
-* User Inputs:
+User Inputs:
 
 - Prompt for AI Image Generation: Users can enter a text prompt to generate an image using OpenAI's API.
 
