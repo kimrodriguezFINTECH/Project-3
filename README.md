@@ -1,4 +1,5 @@
-# Self Generate Event NFT for Sale 
+[DALL·E 2024-05-31 09.56.23 - A wide, flat, and simple illustration in a similar style to two people playing guitars around a campfire. The background features a concert or event s copy.pdf](https://github.com/user-attachments/files/15523701/DALL.E.2024-05-31.09.56.23.-.A.wide.flat.and.simple.illustration.in.a.similar.style.to.two.people.playing.guitars.around.a.campfire.The.background.features.a.concert.or.event.s.copy.pdf)
+# Self Generate Event NFT for Sale
 ## Background
 Event management has always been a complex and multi-faceted industry, involving numerous stakeholders, significant logistical challenges, and various layers of security and verification. Traditional methods of ticketing often face problems such as fraud, counterfeiting, and unauthorized reselling, which can significantly impact the experience of event organizers and attendees alike.
 * Fraud and Counterfeiting: Ticket fraud is a significant issue, with consumers losing millions of dollars annually to counterfeit tickets. A report from Verified.org explains how scammers often sell fake tickets to high-demand events, leaving buyers without access and out of pocket [1].
