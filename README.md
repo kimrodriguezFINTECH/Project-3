@@ -70,7 +70,7 @@ User Inputs:
 
   
 ## FRONT END OF CODE 
-
+#### Connecting to Ganache & Metamask
 We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
 * Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
 
