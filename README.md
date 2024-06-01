@@ -123,14 +123,19 @@ The created NFTs are displayed with their image, number of copies, price per tic
 Step 1: Generating an Image
 
 • User Input for Image Generation:
+
 	◦ The user enters a prompt for the image they want to generate.
+ 
 	◦ The user clicks the "Generate Image" button.
  
 ![sampleimagegenerated052824](https://github.com/kimrodriguezFINTECH/Project-3/assets/152752672/0a8c1824-7aaf-4787-a71f-85027daeaeff)
 
 • Calling OpenAI API:
+
 	◦ The generate_image(prompt) function is called.
+ 
 	◦ The function constructs a request to the OpenAI API to generate an image based on the provided prompt.
+ 
 	◦ The API key is retrieved from the environment variables (OPENAI_API_KEY).
 (Insert Image)
 
