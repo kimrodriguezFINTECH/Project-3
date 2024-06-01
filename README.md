@@ -13,6 +13,8 @@ With the advent of blockchain technology, there is a unique opportunity to revol
    "Live Nation, Ticketmaster’s parent company, sued in groundbreaking monopoly lawsuit" | CNN Businesshu May 23, 2024
    "US sues Ticketmaster owner Live Nation and seeks break-up of alleged monopoly" |  The Guardian May 23, 2024
 
+   "Mention the news"^
+
 ## Hypothesis 
 We believe we can create our own application that can help event organizers create their own event flyer with the time date and location of the even with the help of AI technology. Our application will give the event creator full control of the number of tickets that will be sold including the option of buying and selling the ticket amongst other customers.
 
