@@ -290,32 +290,44 @@ Step 3: Creating the NFT
  
 (Insert Image) 
 
-Navigating the Sidebar:
-The sidebar contains options for 'Create NFT', 'Marketplace', and 'Resell NFT'.
-Select the desired option to proceed.
-Step1: Creating an NFT
-Select 'Create NFT' from the Sidebar:
+Step 4: Marketplace Transactions
 
+• Viewing Available NFTs:
 
-Generate via AI:
-Choose 'Generate via AI'.
-Set the number of copies, price per ticket, and Ethereum address.
-Enter the event name, date, time, location, and address.
-Enter a description for the image to be generated.
-Click 'Generate Image'.
-Click 'Create NFT'.
-The generated image and its URL will be displayed.
-(image1)
+	◦ The user navigates to the 'Marketplace' section from the sidebar.
+ 
+	◦ The application displays a list of available NFTs with details such as cover art, number of copies, price, and transaction history.
+ 
+• Purchasing an NFT:
 
+	◦ The user selects an NFT to buy by clicking on it.
+ 
+	◦ The user enters their Ethereum address.
 
-Upload Image:
-Choose 'Upload Image'.
-Set the number of copies, price per ticket, and Ethereum address.
-Upload an image file.
-Click 'Create NFT'.
-The uploaded image and its IPFS hash will be displayed.
+ 	◦ The user clicks the "Buy NFT" button.
+• Executing the Purchase:
 
+	◦ The user selects an NFT to buy by clicking on it.
+	
+ 	◦ The buyTicket function of the smart contract is called with the necessary parameters.
+	
+ 	◦ TThe transaction is processed on the blockchain.
+  
+• Displaying Transaction Receipt:
+	
+ 	◦ Upon successful purchase, the transaction receipt is displayed.
+	
+ 	◦ The ownership details and number of copies available are updated.
+  
+Step 5: Reselling NFTs
 
+• Resell Options:
+
+	◦ The user navigates to the 'Resell NFT' section from the sidebar.
+
+	◦ The user enters their Ethereum address and set the price.
+
+	◦ The user enters clicks "resell", and the NFT will be listed in the marketpalce again.
 
 
 ## Conclusion
