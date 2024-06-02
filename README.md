@@ -175,7 +175,44 @@ This is when a new tokenId is generated based on the current quantity of tokens 
         `priceHistory[tokenId].push(price);`
         `emit TicketCreated(tokenId, owner, price, copies);`
         `return tokenId;}`
+6. Buying the Ticket 
+The buyTicket allows users to purchase a ticket by retrieving the ticket by tokenId. It then checks if the payment is sufficient and if there are copies available. This allows the transfers of the token from the previous owner to the new owner. Additionally, it updates the ownership and price histories when the payment is recieved by the previous owner.
 
+`function buyTicket(uint256 tokenId) public payable {`
+
+        `Ticket storage ticket = tickets[tokenId];`
+	
+        `require(msg.value >= ticket.price, "Insufficient funds");`
+	
+        `require(ticket.copies > 0, "No more copies available");`
+
+        `address previousOwner = ownerOf(tokenId);`
+	
+        `address newOwner = msg.sender;`
+
+        `_transferFrom(previousOwner, newOwner, tokenId);`
+
+        `ownershipHistory[tokenId].push(newOwner);`
+	
+        `priceHistory[tokenId].push(msg.value);`
+
+        `ticket.copies--;`
+
+        `address(uint160(previousOwner)).transfer(msg.value);`
+
+        `emit TicketTransferred(tokenId, previousOwner, newOwner, msg.value);}`
+
+7. Ownership and Price History
+* `getOwnershipHistory` returns the ownership history of a ticket given its `tokenId`
+
+`function getOwnershipHistory(uint256 tokenId) public view returns (address[] memory) {return ownershipHistory[tokenId];}`
+
+* `getPriceHistory` returns the price history of a ticket given `its tokenId`
+
+`function getPriceHistory(uint256 tokenId) public view returns (uint256[] memory) {return priceHistory[tokenId];}`
+
+8. Copies
+`getCopies` returns the number of remaining copies for a given ticket by `tokenId`
 
 ## Technical Explanation Demo 
 Step 1: Generating an Image
