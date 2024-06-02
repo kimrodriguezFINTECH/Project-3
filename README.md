@@ -218,117 +218,53 @@ The `getCopies` returns the number of remaining copies for a given ticket by `to
 `function getCopies(uint256 tokenId) public view returns (uint256) {return tickets[tokenId].copies;}`
 
 ## Technical Explanation Demo 
-Step 1: Generating an Image
+Navigating the Sidebar:
+The sidebar contains options for 'Create NFT', 'Marketplace', and 'Resell NFT'.
+Select the desired option to proceed.
 
-• User Input for Image Generation:
+### Step 1: Creating an NFT
 
-	◦ The user enters a prompt for the image they want to generate.
- 
-	◦ The user clicks the "Generate Image" button.
- 
-• Calling OpenAI API:
+*Select 'Create NFT' from the Sidebar:
+	*Generate via AI:
+	Choose 'Generate via AI'.
+	Set the number of copies, price per ticket, and Ethereum address.
+	Enter the event name, date, time, location, and address.
+	Enter a description for the image to be generated.
+	Click 'Generate Image'.
+	Click 'Create NFT'.
+	The generated image and its URL will be displayed.
+(image1)
 
-	◦ The generate_image(prompt) function is called.
- 
-	◦ The function constructs a request to the OpenAI API to generate an image based on the provided prompt.
- 
-	◦ The API key is retrieved from the environment variables (OPENAI_API_KEY).
- 
-(Insert Image)
 
-• Displaying Generated Image:
+	*Upload Image:
+	Choose 'Upload Image'.
+	Set the number of copies, price per ticket, and Ethereum address.
+	Upload an image file.
+	Click 'Create NFT'.
+	The uploaded image and its IPFS hash will be displayed.
 
-	◦ If the image generation is successful, the URL of the generated image is stored in st.session_state['image_url'].
- 
-	◦ The image is displayed on the Streamlit UI using st.image(image_url).
- 
-(Insert Image)
+### Step 2: Marketplace Transactions
 
-Step 2: Selecting Quantity, Price and Ethereum Address for Receiving
- 
-• The user selects the number of copies they want to create (num_copies).
+*Viewing Available NFTs:
 
-• The user sets the price per ticket in Ether (price_per_ticket).
+The user navigates to the 'Marketplace' section from the sidebar.
+The application displays a list of available NFTs with details such as cover art, number of copies, price, and transaction history.
 
-• The user provides their Ethereum address to receive funds from sales of ticket(NFT) (eth_address).
+*Purchasing an NFT:
 
-(Insert Image) 
+The user selects an NFT to buy by clicking on it.
+The user enters their Ethereum address.
+The user clicks the "Buy NFT" button.
+Upon successful purchase, the transaction receipt is displayed.
+The ownership details and number of copies available are updated.
 
-Step 3: Creating the NFT
+### Step 3: Reselling NFTs
 
-• Creating NFT Metadata:
-
-	◦ The st.button("Create NFT") click triggers the process.
- 
-	◦ The metadata for the NFT, including the image URL, is prepared in JSON format.
- 
-(Insert Image) 
-
-• Pinning Metadata to IPFS:
-	◦ The pin_json_to_ipfs function is called to pin the NFT metadata to IPFS via Pinata.
- 
-	◦ The Pinata API key and secret key are retrieved from the .env.
- 
-	◦ The metadata is sent to Pinata, which returns an IPFS hash (IpfsHash).
- 
-(Insert Image)
-
-• Minting the NFT:
-
-	◦ The IPFS hash (token_uri) is used as the token URI for the NFT.
- 
-	◦ The smart contract's registerTicket function is called to mint the NFT on the blockchain.
- 
-	◦ The user's Ethereum address and token URI are passed as arguments to the registerTicket function.
-(Insert Image)
-
-• Storing NFT Details:
-
-	◦ The NFT details (token ID, image URL, price, owner) are stored in st.session_state['nfts'] to be displayed in the marketplace.
- 
-	◦ The marketplace can then show all NFTs with their respective details.
- 
-(Insert Image) 
-
-Step 4: Marketplace Transactions
-
-• Viewing Available NFTs:
-
-	◦ The user navigates to the 'Marketplace' section from the sidebar.
- 
-	◦ The application displays a list of available NFTs with details such as cover art, number of copies, price, and transaction history.
- 
-• Purchasing an NFT:
-
-	◦ The user selects an NFT to buy by clicking on it.
- 
-	◦ The user enters their Ethereum address.
-
- 	◦ The user clicks the "Buy NFT" button.
-• Executing the Purchase:
-
-	◦ The user selects an NFT to buy by clicking on it.
-	
- 	◦ The buyTicket function of the smart contract is called with the necessary parameters.
-	
- 	◦ TThe transaction is processed on the blockchain.
-  
-• Displaying Transaction Receipt:
-	
- 	◦ Upon successful purchase, the transaction receipt is displayed.
-	
- 	◦ The ownership details and number of copies available are updated.
-  
-Step 5: Reselling NFTs
-
-• Resell Options:
-
-	◦ The user navigates to the 'Resell NFT' section from the sidebar.
-
-	◦ The user enters their Ethereum address and set the price.
-
-	◦ The user enters clicks "resell", and the NFT will be listed in the marketpalce again.
-
+*Resell Options:
+The user navigates to the 'Resell NFT' section from the sidebar.
+The user selects between 'I want to sell' and 'I want to buy' options.
+Upon successful resale purchase, the transaction receipt is displayed.
+The ownership details and number of copies available are updated.
 
 ## Conclusion
 In conclusion, our application leverages the power of NFTs and blockchain technology to address and resolve the prevalent issues in traditional ticketing systems. Additionally, our applicaiton aligns with recent developments and industry demands for a more secure, transparent, and user-centric solutions in event management. This ensures a fairer and more enjoyable experience for all stakeholders involved.
