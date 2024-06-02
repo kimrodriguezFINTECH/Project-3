@@ -22,7 +22,7 @@ Create a Streamlit-based web application that allows users to generate AI images
 * contract_abi.json
 * env.txt 
 
-## Install Packages
+## Install Packages/Imports 
 * `os` for interacting with the operating system.
 * `streamlit` to create the web app interface.
 * `json` for transmitting data in web applications 
@@ -35,6 +35,7 @@ Create a Streamlit-based web application that allows users to generate AI images
 * `Web3.py` Python library for interacting with Ethereum.
 * `Ganache` Personal Ethereum wallet, used to simulate transactions.
 * `Metaask` Browser extension wallet for managing Ethereum accounts and transactions.
+* "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC721/ERC721Full.sol"
 
 ## Key Functionalities
 
@@ -137,28 +138,6 @@ The Sidebar Navigation also gives the creator the option to generate an AI image
 ## BACK END OF CODE  
 
 
-## NFT Ticket
-For the Streamlit's session state is used to store variables that need to persist across reruns of the app. 
-
-`nfts` : A list to store NFT data.
-
-`image_url` : The URL of the image to be used for the NFT.
-
-`num_copies` : The number of copies for each NFT ticket, defaulting to 1.
-
-`price_per_ticket` : The price for each NFT ticket, defaulting to 0.01 ETH.
-
-`eth_address` : The Ethereum address for the transaction, initialized as an empty string.
-
-
-Create NFT Ticket:
-When the "Create NFT Ticket" button is clicked, a new NFT dictionary is created with the input values and appended to the `st.session_state['nfts']` list.
-A success message is displayed.
-
-Display NFTs:
-
-The created NFTs are displayed with their image, number of copies, price per ticket, and Ethereum address.
-`image_option = st.sidebar.radio('Select Image Option', ('Generate via AI', 'Upload Image'))`
 
 ## Technical Explanation Demo 
 Step 1: Generating an Image
