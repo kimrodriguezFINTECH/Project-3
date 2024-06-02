@@ -92,7 +92,7 @@ In order for us to be able to sell and buy for this event we used Metamask as ou
 `contract = web3.eth.contract(address=contract_address, abi=contract_abi)`
 
 ### Streamlit UI
-We then initialized several variables in the session to store data related to NFTs, such as the list of NFTs, image URL, number of copies, price per ticket, and Ethereum address. This ensures that the variables are available and have default values throughout the app's session, allowing the creator to manage and retain user inputs or create more NFTs.
+We then connected to streamlit in order to store data related to our NFTs, such as the list of NFTs, images, number of copies, price per ticket, and Ethereum address for the trasaction history. This ensures that the variables are available and have default values throughout the app's session, allowing the creator to manage and retain user inputs or manage the NFTs in session.
   
 `if 'nfts' not in st.session_state:
     st.session_state['nfts'] = []`
@@ -132,6 +132,7 @@ The Sidebar Navigation also gives the creator the option to generate an AI image
 
 `elif image_option == 'Upload Image':`
         `uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png"])`
+
 
 ## BACK END OF CODE  
 
