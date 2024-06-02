@@ -261,8 +261,10 @@ The ownership details and number of copies available are updated.
 ### Step 3: Reselling NFTs
 
 * Resell Options:
+
 The user navigates to the 'Resell NFT' section from the sidebar.
-The user selects between 'I want to sell' and 'I want to buy' options.
+The user enters their Ethereum address owned the NFT for reselling.
+The user sets the new price for the NFT in Ether.
 Upon successful resale purchase, the transaction receipt is displayed.
 The ownership details and number of copies available are updated.
 
