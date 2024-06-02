@@ -23,18 +23,18 @@ Create a Streamlit-based web application that allows users to generate AI images
 * env.txt 
 
 ## Install Packages/Imports 
-* `os` for interacting with the operating system.
-* `streamlit` to create the web app interface.
+* `os` for interacting with the operating system
+* `streamlit` to create the web app interface
 * `json` for transmitting data in web applications 
 * `requests` for interacting with web APIs
 * `pandas` for data manipulation
-* `OpenAI` API for generating images based on user prompts.
-* `Pinata` for images on IPFS and retrieves IPFS hashes.
-* `Solidity` for Smart contract language used to create and manage NFTs.
-* `Remix` for Online IDE for writing and deploying Solidity contracts.
-* `Web3.py` Python library for interacting with Ethereum.
-* `Ganache` Personal Ethereum wallet, used to simulate transactions.
-* `Metaask` Browser extension wallet for managing Ethereum accounts and transactions.
+* `OpenAI` API for generating images based on user prompts
+* `Pinata` for images on IPFS and retrieves IPFS hashes
+* `Solidity` for Smart contract language used to create and manage NFTs
+* `Remix` for Online IDE for writing and deploying Solidity contracts
+* `Web3.py` Python library for interacting with Ethereum
+* `Ganache` Personal Ethereum wallet, used to simulate transactions
+* `Metaask` Browser extension wallet for managing Ethereum accounts and transactions
 * "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC721/ERC721Full.sol"
 
 ## Key Functionalities
