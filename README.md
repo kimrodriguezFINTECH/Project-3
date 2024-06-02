@@ -1,20 +1,16 @@
 # Self Generate Event NFT for Sale
 ## Background
-Event management has always been a complex and multi-faceted industry, involving numerous stakeholders, significant logistical challenges, and various layers of security and verification. Traditional methods of ticketing often face problems such as fraud, counterfeiting, and unauthorized reselling, which can significantly impact the experience of event organizers and attendees alike.
-* Fraud and Counterfeiting: Ticket fraud is a significant issue, with consumers losing millions of dollars annually to counterfeit tickets. A report from Verified.org explains how scammers often sell fake tickets to high-demand events, leaving buyers without access and out of pocket [1].
-* Unauthorized Reselling: Unauthorized ticket reselling (scalping) leads to significant losses for both event organizers and consumers. This problem is highlighted by IdentityIQ, which notes that ticket scams are prevalent for sold-out events due to high demand [2].
-With the advent of blockchain technology, there is a unique opportunity to revolutionize the event ticketing process. Non-Fungible Tokens (NFTs) provide a secure, transparent, and immutable way to represent ownership of digital assets. By leveraging NFTs for event tickets, we can address many of the longstanding issues in the ticketing industry.
-
-  "Live Nation, Ticketmaster’s parent company, sued in groundbreaking monopoly lawsuit" | CNN Businesshu May 23, 2024
-   "US sues Ticketmaster owner Live Nation and seeks break-up of alleged monopoly" |  The Guardian May 23, 2024
+Event management has always been a complex and multi-faceted industry, involving numerous stakeholders, significant logistical challenges, and various layers of security and verification. Traditional methods of ticketing often face problems such as fraud, counterfeiting, and unauthorized reselling, which can significantly impact the experience of event organizers and attendees alike. For example, The Department of Justice has filed an antitrust lawsuit against Live Nation, aiming to break up the entertainment giant, Ticketmaster. The lawsuit, supported by 29 states and the District of Columbia, accuses Live Nation of monopolistic practices that undermine competition in the live events industry. The DOJ claims that Live Nation (Ticketmaster) forces consumers to pay higher prices and manipulates ticketing technology. Additionally, the company allegedly uses its market power to impose barriers that prevent competitors from entering or expanding within the industry​. The lawsuit seeks structural changes to break up the company's monopoly and restore competition to benefit fans, artists, and smaller promoters​. Hence, the structure of our application aims to completely stop or discourage these types of practices that Live Nation has displayed within this lawsuit. 
 
 ## Objective
 Create a Streamlit-based web application that allows users to generate AI images or upload their own images to create NFTs (Non-Fungible Tokens). These NFTs serve as digital tickets that users can sell, and others can purchase. The app will also display the transaction history for each NFT.
 
+Throughout our application we aim to: 
+
 1. Eliminate Fraud and Counterfeiting: Traditional paper or digital tickets are susceptible to fraud and counterfeiting. NFTs, being unique and verifiable on the blockchain, can ensure that each ticket is authentic and tamper-proof. According to Forbes, blockchain's immutability and transparency significantly reduce fraud in ticketing [3].
 2. Prevent Unauthorized Reselling: NFT-based tickets can include smart contract rules that restrict or control the resale of tickets. This can prevent scalping and ensure tickets are sold at fair prices. TechCrunch discusses how smart contracts can enforce resale rules automatically, making them ideal for this purpose [4].
 3. Enhance Attendee Experience: NFT tickets can offer a richer experience by including additional digital content, such as event memorabilia, exclusive access, or future benefits, all embedded within the NFT. CoinDesk highlights various case studies where NFTs have enhanced fan engagement in sports and entertainment [5].
-4. Empower Event Organizers: By decentralizing the ticketing process, event organizers have greater control over the distribution and pricing of tickets, reducing dependency on third-party vendors and increasing their revenue potential. Harvard Business Review elaborates on the benefits of decentralization in ticketing [6].Recently, current events have shown the importance of potential soutions to this issue. The follwing are some of the news relating to these issues:
+4. Empower Event Organizers: By decentralizing the ticketing process, event organizers have greater control over the distribution and pricing of tickets, reducing dependency on third-party vendors and increasing their revenue potential.
 
 ## Files
 * app.py
@@ -289,12 +285,15 @@ Step 3: Creating the NFT
 (Insert Image) 
 
 ## Conclusion
-
-
-
-
+In conclusion, our application leverages the power of NFTs and blockchain technology to address and resolve the prevalent issues in traditional ticketing systems. Additionally, our applicaiton aligns with recent developments and industry demands for a more secure, transparent, and user-centric solutions in event management. This ensures a fairer and more enjoyable experience for all stakeholders involved.
 
 ## References
+* https://www.cnn.com/2024/05/23/tech/live-nation-antitrust-violations-doj-lawsuit/index.html
+
+* https://www.theguardian.com/business/article/2024/may/23/live-nation-ticketmaster-lawsuit
+
+* Tutor Sessions: 
+
 Verified.org: "How to Avoid Fake Tickets to Events, Flights, and More". Available at: https://www.verified.org/articles/scams/fake-ticket-scams
 IdentityIQ: "How to not Get Scammed Buying Tickets". Available at: https://www.identityiq.com/scams-and-fraud/how-to-not-get-scammed-buying-tickets/#:~:text=Avoid%20offers%20that%20seem%20%E2%80%9Ctoo,don't%20take%20the%20bait.
 Forbes: "How Mobile Blockchain Ticketing Is Changing The Events Industry”. Available at: https://www.forbes.com/sites/forbesbusinesscouncil/2022/03/18/how-mobile-blockchain-ticketing-is-changing-the-events-industry/?sh=52c7926d683e
