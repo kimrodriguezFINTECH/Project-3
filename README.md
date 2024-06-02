@@ -292,11 +292,13 @@ In conclusion, our application leverages the power of NFTs and blockchain techno
 
 * https://www.theguardian.com/business/article/2024/may/23/live-nation-ticketmaster-lawsuit
 
-* Tutor Sessions: 
+* Verified.org: "How to Avoid Fake Tickets to Events, Flights, and More". Available at: https://www.verified.org/articles/scams/fake-ticket-scams
+  
+* IdentityIQ: "How to not Get Scammed Buying Tickets". Available at: https://www.identityiq.com/scams-and-fraud/how-to-not-get-scammed-buying tickets/#:~:text=Avoid%20offers%20that%20seem%20%E2%80%9Ctoo,don't%20take%20the%20bait.
+  
+* Forbes: "How Mobile Blockchain Ticketing Is Changing The Events Industry”. Available at: https://www.forbes.com/sites/forbesbusinesscouncil/2022/03/18/how-mobile-blockchain-ticketing-is-changing-the-events-industry/?sh=52c7926d683e
+  
+* TechCrunch: "How NFT Ticketing is Reshaping Traditional Ticketing Systems?” Available at: https://www.mxicoders.com/how-nft-ticketing-is-reshaping-traditional-ticketing-systems/
+  
+* CoinDesk: "Why We Need NFT Ticketing for Sports Events.” Available at: https://www.coindesk.com/layer2/2022/07/29/why-we-need-nft-ticketing-for-sports-events/#:~:text=Offering%20the%20potential%20for%20change,adding%20value%20for%20loyal%20fans
 
-Verified.org: "How to Avoid Fake Tickets to Events, Flights, and More". Available at: https://www.verified.org/articles/scams/fake-ticket-scams
-IdentityIQ: "How to not Get Scammed Buying Tickets". Available at: https://www.identityiq.com/scams-and-fraud/how-to-not-get-scammed-buying-tickets/#:~:text=Avoid%20offers%20that%20seem%20%E2%80%9Ctoo,don't%20take%20the%20bait.
-Forbes: "How Mobile Blockchain Ticketing Is Changing The Events Industry”. Available at: https://www.forbes.com/sites/forbesbusinesscouncil/2022/03/18/how-mobile-blockchain-ticketing-is-changing-the-events-industry/?sh=52c7926d683e
-TechCrunch: "How NFT Ticketing is Reshaping Traditional Ticketing Systems?” Available at: https://www.mxicoders.com/how-nft-ticketing-is-reshaping-traditional-ticketing-systems/
-CoinDesk: "Why We Need NFT Ticketing for Sports Events.” Available at: https://www.coindesk.com/layer2/2022/07/29/why-we-need-nft-ticketing-for-sports-events/#:~:text=Offering%20the%20potential%20for%20change,adding%20value%20for%20loyal%20fans
-Harvard Business Review: "How Blockchain Is Changing Finance". Available at: https://hbr.org/2017/03/how-blockchain-is-changing-finance
