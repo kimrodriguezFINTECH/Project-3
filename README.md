@@ -273,6 +273,7 @@ Step 3: Creating the NFT
 (Insert Image)
 
 • Minting the NFT:
+
 	◦ The IPFS hash (token_uri) is used as the token URI for the NFT.
  
 	◦ The smart contract's registerTicket function is called to mint the NFT on the blockchain.
@@ -281,6 +282,7 @@ Step 3: Creating the NFT
 (Insert Image)
 
 • Storing NFT Details:
+
 	◦ The NFT details (token ID, image URL, price, owner) are stored in st.session_state['nfts'] to be displayed in the marketplace.
  
 	◦ The marketplace can then show all NFTs with their respective details.
