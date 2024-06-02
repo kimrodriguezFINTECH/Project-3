@@ -212,6 +212,7 @@ The buyTicket allows users to purchase a ticket by retrieving the ticket by toke
 `function getPriceHistory(uint256 tokenId) public view returns (uint256[] memory) {return priceHistory[tokenId];}`
 
 8. Copies
+   
 The `getCopies` returns the number of remaining copies for a given ticket by `tokenId`
 
 `function getCopies(uint256 tokenId) public view returns (uint256) {return tickets[tokenId].copies;}`
