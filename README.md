@@ -91,6 +91,26 @@ In order for us to be able to sell and buy for this event we used Metamask as ou
 
 `contract = web3.eth.contract(address=contract_address, abi=contract_abi)`
 
+Initializing the session state for storing NFTs and form inputs:
+* It initializes several variables in the session state to store data related to NFTs, such as the list of NFTs, image URL, number of copies, price per ticket, and Ethereum address.
+* These initializations ensure that the variables are available and have default values throughout the user's session, allowing the app to manage and retain user inputs and created NFTs.
+  
+`if 'nfts' not in st.session_state:
+    st.session_state['nfts'] = []
+  
+if 'image_url' not in st.session_state:
+    st.session_state['image_url'] = None
+    
+if 'num_copies' not in st.session_state:
+    st.session_state['num_copies'] = 1
+    
+if 'price_per_ticket' not in st.session_state:
+    st.session_state['price_per_ticket'] = 0.01
+    
+if 'eth_address' not in st.session_state:
+    st.session_state['eth_address'] = ""`
+
+
 ## BACK END OF CODE  
 
 
