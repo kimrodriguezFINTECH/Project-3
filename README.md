@@ -169,8 +169,6 @@ Step 1: Generating an Image
  
 	◦ The user clicks the "Generate Image" button.
  
-![sampleimagegenerated052824](https://github.com/kimrodriguezFINTECH/Project-3/assets/152752672/0a8c1824-7aaf-4787-a71f-85027daeaeff)
-
 • Calling OpenAI API:
 
 	◦ The generate_image(prompt) function is called.
@@ -178,42 +176,59 @@ Step 1: Generating an Image
 	◦ The function constructs a request to the OpenAI API to generate an image based on the provided prompt.
  
 	◦ The API key is retrieved from the environment variables (OPENAI_API_KEY).
+ 
 (Insert Image)
 
 • Displaying Generated Image:
+
 	◦ If the image generation is successful, the URL of the generated image is stored in st.session_state['image_url'].
+ 
 	◦ The image is displayed on the Streamlit UI using st.image(image_url).
+ 
 (Insert Image)
 
 Step 2: Selecting Quantity, Price and Ethereum Address for Receiving
  
 • The user selects the number of copies they want to create (num_copies).
+
 • The user sets the price per ticket in Ether (price_per_ticket).
+
 • The user provides their Ethereum address to receive funds from sales of ticket(NFT) (eth_address).
+
 (Insert Image) 
 
 Step 3: Creating the NFT
 
 • Creating NFT Metadata:
+
 	◦ The st.button("Create NFT") click triggers the process.
+ 
 	◦ The metadata for the NFT, including the image URL, is prepared in JSON format.
+ 
 (Insert Image) 
 
 • Pinning Metadata to IPFS:
 	◦ The pin_json_to_ipfs function is called to pin the NFT metadata to IPFS via Pinata.
+ 
 	◦ The Pinata API key and secret key are retrieved from the .env.
+ 
 	◦ The metadata is sent to Pinata, which returns an IPFS hash (IpfsHash).
+ 
 (Insert Image)
 
 • Minting the NFT:
 	◦ The IPFS hash (token_uri) is used as the token URI for the NFT.
+ 
 	◦ The smart contract's registerTicket function is called to mint the NFT on the blockchain.
+ 
 	◦ The user's Ethereum address and token URI are passed as arguments to the registerTicket function.
 (Insert Image)
 
 • Storing NFT Details:
 	◦ The NFT details (token ID, image URL, price, owner) are stored in st.session_state['nfts'] to be displayed in the marketplace.
+ 
 	◦ The marketplace can then show all NFTs with their respective details.
+ 
 (Insert Image) 
 
 ## References
