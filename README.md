@@ -1,6 +1,5 @@
-<img width="1291" alt="Screenshot 2024-06-01 at 7 45 44 PM" src="https://github.com/kimrodriguezFINTECH/Project-3/assets/152752672/2734ebc0-3abb-4581-b2bf-c014b492f0d5">
-
 # Orpheus: Self Generated NFT for Sale
+![Creating NFT Metadata](Images/background.png)
 ## Background
 Event management has always been a complex and multi-faceted industry, involving numerous stakeholders, significant logistical challenges, and various layers of security and verification. Traditional methods of ticketing often face problems such as fraud, counterfeiting, and unauthorized reselling, which can significantly impact the experience of event organizers and attendees alike. For example, The Department of Justice has filed an antitrust lawsuit against Live Nation, aiming to break up the entertainment giant, Ticketmaster. The lawsuit, supported by 29 states and the District of Columbia, accuses Live Nation of monopolistic practices that undermine competition in the live events industry. The DOJ claims that Live Nation (Ticketmaster) forces consumers to pay higher prices and manipulates ticketing technology. Additionally, the company allegedly uses its market power to impose barriers that prevent competitors from entering or expanding within the industry​. The lawsuit seeks structural changes to break up the company's monopoly and restore competition to benefit fans, artists, and smaller promoters​. Hence, the structure of our application aims to completely stop or discourage these types of practices that Live Nation has displayed within this lawsuit. 
 
