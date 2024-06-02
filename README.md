@@ -224,8 +224,8 @@ Select the desired option to proceed.
 
 ### Step 1: Creating an NFT
 
-*Select 'Create NFT' from the Sidebar:
-	*Generate via AI:
+* Select 'Create NFT' from the Sidebar:
+	* Generate via AI:
 	Choose 'Generate via AI'.
 	Set the number of copies, price per ticket, and Ethereum address.
 	Enter the event name, date, time, location, and address.
@@ -236,7 +236,7 @@ Select the desired option to proceed.
 (image1)
 
 
-	*Upload Image:
+	* Upload Image:
 	Choose 'Upload Image'.
 	Set the number of copies, price per ticket, and Ethereum address.
 	Upload an image file.
@@ -245,12 +245,12 @@ Select the desired option to proceed.
 
 ### Step 2: Marketplace Transactions
 
-*Viewing Available NFTs:
+* Viewing Available NFTs:
 
 The user navigates to the 'Marketplace' section from the sidebar.
 The application displays a list of available NFTs with details such as cover art, number of copies, price, and transaction history.
 
-*Purchasing an NFT:
+* Purchasing an NFT:
 
 The user selects an NFT to buy by clicking on it.
 The user enters their Ethereum address.
@@ -260,7 +260,7 @@ The ownership details and number of copies available are updated.
 
 ### Step 3: Reselling NFTs
 
-*Resell Options:
+* Resell Options:
 The user navigates to the 'Resell NFT' section from the sidebar.
 The user selects between 'I want to sell' and 'I want to buy' options.
 Upon successful resale purchase, the transaction receipt is displayed.
