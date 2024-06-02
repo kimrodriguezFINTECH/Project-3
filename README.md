@@ -208,7 +208,7 @@ The buyTicket allows users to purchase a ticket by retrieving the ticket by toke
 
 `function getOwnershipHistory(uint256 tokenId) public view returns (address[] memory) {return ownershipHistory[tokenId];}`
 
-* `getPriceHistory` returns the price history of a ticket given `its tokenId`
+* `getPriceHistory` returns the price history of a ticket given its `tokenId`
 
 `function getPriceHistory(uint256 tokenId) public view returns (uint256[] memory) {return priceHistory[tokenId];}`
 
