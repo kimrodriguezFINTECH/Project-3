@@ -204,16 +204,18 @@ The buyTicket allows users to purchase a ticket by retrieving the ticket by toke
         `emit TicketTransferred(tokenId, previousOwner, newOwner, msg.value);}`
 
 7. Ownership and Price History
-* `getOwnershipHistory` returns the ownership history of a ticket given its `tokenId`
+* The `getOwnershipHistory` returns the ownership history of a ticket given its `tokenId`
 
 `function getOwnershipHistory(uint256 tokenId) public view returns (address[] memory) {return ownershipHistory[tokenId];}`
 
-* `getPriceHistory` returns the price history of a ticket given its `tokenId`
+* The `getPriceHistory` returns the price history of a ticket given its `tokenId`
 
 `function getPriceHistory(uint256 tokenId) public view returns (uint256[] memory) {return priceHistory[tokenId];}`
 
 8. Copies
-`getCopies` returns the number of remaining copies for a given ticket by `tokenId`
+The `getCopies` returns the number of remaining copies for a given ticket by `tokenId`
+
+`function getCopies(uint256 tokenId) public view returns (uint256) {return tickets[tokenId].copies;}`
 
 ## Technical Explanation Demo 
 Step 1: Generating an Image
@@ -285,6 +287,12 @@ Step 3: Creating the NFT
 	◦ The marketplace can then show all NFTs with their respective details.
  
 (Insert Image) 
+
+## Conclusion
+
+
+
+
 
 ## References
 Verified.org: "How to Avoid Fake Tickets to Events, Flights, and More". Available at: https://www.verified.org/articles/scams/fake-ticket-scams
