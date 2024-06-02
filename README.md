@@ -287,6 +287,7 @@ Step 3: Creating the NFT
  
 (Insert Image) 
 
+
 ## Conclusion
 In conclusion, our application leverages the power of NFTs and blockchain technology to address and resolve the prevalent issues in traditional ticketing systems. Additionally, our applicaiton aligns with recent developments and industry demands for a more secure, transparent, and user-centric solutions in event management. This ensures a fairer and more enjoyable experience for all stakeholders involved.
 
