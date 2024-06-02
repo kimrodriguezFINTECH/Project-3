@@ -235,14 +235,14 @@ Select the desired option to proceed.
 	Click 'Create NFT'.
 	The generated image and its URL will be displayed.
 
-![Alt text](Images/generate_via_AI.png)
-
 	* Upload Image:
 	Choose 'Upload Image'.
 	Set the number of copies, price per ticket, and Ethereum address.
 	Upload an image file.
 	Click 'Create NFT'.
 	The uploaded image and its IPFS hash will be displayed.
+
+![Alt text](Images/generate_via_AI.png)
 
 ![Alt text](Images/generate_upload.png) 
 
