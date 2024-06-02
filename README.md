@@ -95,18 +95,18 @@ In order for us to be able to sell and buy for this event we used Metamask as ou
 We then initialized several variables in the session to store data related to NFTs, such as the list of NFTs, image URL, number of copies, price per ticket, and Ethereum address. This ensures that the variables are available and have default values throughout the app's session, allowing the creator to manage and retain user inputs or create more NFTs.
   
 `if 'nfts' not in st.session_state:
-    st.session_state['nfts'] = []
+    st.session_state['nfts'] = []`
    
-if 'image_url' not in st.session_state:
-    st.session_state['image_url'] = None
+`if 'image_url' not in st.session_state:
+    st.session_state['image_url'] = None`
     
-if 'num_copies' not in st.session_state:
-    st.session_state['num_copies'] = 1
+`if 'num_copies' not in st.session_state:
+    st.session_state['num_copies'] = 1`
     
-if 'price_per_ticket' not in st.session_state:
-    st.session_state['price_per_ticket'] = 0.01
+`if 'price_per_ticket' not in st.session_state:
+    st.session_state['price_per_ticket'] = 0.01`
     
-if 'eth_address' not in st.session_state:
+`if 'eth_address' not in st.session_state:
     st.session_state['eth_address'] = ""`
 
 
