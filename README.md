@@ -109,6 +109,29 @@ We then initialized several variables in the session to store data related to NF
 `if 'eth_address' not in st.session_state:
     st.session_state['eth_address'] = ""`
 
+### Sidebar Navigation
+A dropdown menu in the sidebar allows the creator and customer to choose between three options: 'Create NFT', 'Marketplace', and 'Resell NFT'.
+For example when the creator selects 'Create NFT', the main area of the app displays a header with the text "Create NFT Ticket". This indicates that the app will present the user with tools or forms to create an NFT ticket in this section.
+
+`st.sidebar.title("Navigation")`
+option = st.sidebar.selectbox('Select an option', ('Create NFT', 'Marketplace', 'Resell NFT'))`
+
+The Sidebar Navigation also gives the creator the option to generate an AI image flyer of the event that will inlude the following:
+
+* name of the event
+* date of the event
+* time of the event
+* name of the location
+* address of the location
+* description of the image to be generated for the event
+  
+`if st.button("Generate Image"):`
+            `prompt = f"Create a flyer of {descriptionevent} for an event with title {eventname}, on {eventdate}, at {eventtime} hrs at {eventloc} {eventaddress}"`
+
+* Note: The creator can also upload their own personal flyer if they do not want to use the AI generator for the event
+
+`elif image_option == 'Upload Image':`
+        `uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png"])`
 
 ## BACK END OF CODE  
 
