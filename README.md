@@ -26,6 +26,7 @@ Throughout our application we aim to:
 * `json` for transmitting data in web applications 
 * `requests` for interacting with web APIs
 * `pandas` for data manipulation
+* `python-dotenv` for environment-specific variables:
 * `OpenAI` API for generating images based on user prompts
 * `Pinata` for images on IPFS and retrieves IPFS hashes
 * `Solidity` for Smart contract language used to create and manage NFTs
