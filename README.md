@@ -68,7 +68,7 @@ User Inputs:
 
   
 ## FRONT END OF CODE 
-#### Connecting to Ganache & Metamask
+### Connecting to Ganache & Metamask
 We started off with the Pinata Configuration: `pinata_api_key = os.getenv('PINATA_API_KEY')`
 * Our API key ensures our sensitive information is securely managed, enhances flexibility across different environments, and is used for best practices regarding application configuration.
 
@@ -91,13 +91,12 @@ In order for us to be able to sell and buy for this event we used Metamask as ou
 
 `contract = web3.eth.contract(address=contract_address, abi=contract_abi)`
 
-Initializing the session state for storing NFTs and form inputs:
-* It initializes several variables in the session state to store data related to NFTs, such as the list of NFTs, image URL, number of copies, price per ticket, and Ethereum address.
-* These initializations ensure that the variables are available and have default values throughout the user's session, allowing the app to manage and retain user inputs and created NFTs.
+### Streamlit UI
+We then initialized several variables in the session to store data related to NFTs, such as the list of NFTs, image URL, number of copies, price per ticket, and Ethereum address. This ensures that the variables are available and have default values throughout the app's session, allowing the creator to manage and retain user inputs or create more NFTs.
   
 `if 'nfts' not in st.session_state:
     st.session_state['nfts'] = []
-  
+   
 if 'image_url' not in st.session_state:
     st.session_state['image_url'] = None
     
