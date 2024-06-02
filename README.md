@@ -149,108 +149,32 @@ The provided Solidity code defines a smart contract for an NFT-based ticketing s
 `contract NFTTicket is ERC721Full {struct Ticket { uint256 tokenId; uint256 price; uint256 copies;}`
 
 3. Stating the Variables 
+* `tickets` holds all the tickets that will be available to buy
+* `ownershipHistory` will track the ownership history of each ticket by the `tokenId`
+* `priceHistory` records the price history of each ticket by the `tokenId` for later use if the customer want to resell the ticket later 
 
-State Variables:
+`Ticket[] public tickets;`
+`mapping(uint256 => address[]) public ownershipHistory;`
+`mapping(uint256 => uint256[]) public priceHistory;`
 
-solidity
-Copy code
-Ticket[] public tickets;
-mapping(uint256 => address[]) public ownershipHistory;
-mapping(uint256 => uint256[]) public priceHistory;
-tickets is an array that holds all the tickets.
-ownershipHistory is a mapping that tracks the ownership history of each ticket by tokenId.
-priceHistory is a mapping that records the price history of each ticket by tokenId.
-Events:
+4. Event
+The `TicketCreated` and `TicketTransferred` are events when a ticket is created or transferred. These events are indexed for easier querying in the event logs or transaction history.
 
-solidity
-Copy code
-event TicketCreated(uint256 indexed tokenId, address indexed owner, uint256 price, uint256 copies);
-event TicketTransferred(uint256 indexed tokenId, address indexed from, address indexed to, uint256 price);
-TicketCreated and TicketTransferred are events that will be emitted when a ticket is created or transferred, respectively. These events are indexed for easier querying in the event logs.
-Constructor:
+`event TicketCreated(uint256 indexed tokenId, address indexed owner, uint256 price, uint256 copies);`
+`event TicketTransferred(uint256 indexed tokenId, address indexed from, address indexed to, uint256 price);`
 
-solidity
-Copy code
-constructor() public ERC721Full("NFTTicket", "TICKET") {}
-The constructor initializes the ERC721Full contract with a name ("NFTTicket") and symbol ("TICKET").
-Register a New Ticket:
+5. Regsitering a New Ticket
+This is when a new tokenId is generated based on the current quantity of tokens available. The new token is then assigned to the owner and price histories are initialized at this point and time.
 
-solidity
-Copy code
-function registerTicket(address owner, string memory tokenURI, uint256 price, uint256 copies) public returns (uint256) {
-    uint256 tokenId = totalSupply();
-    _mint(owner, tokenId);
-    _setTokenURI(tokenId, tokenURI);
-    tickets.push(Ticket(tokenId, price, copies));
-    ownershipHistory[tokenId].push(owner);
-    priceHistory[tokenId].push(price);
-    emit TicketCreated(tokenId, owner, price, copies);
-    return tokenId;
-}
-registerTicket creates a new ticket:
-A new tokenId is generated based on the current total supply of tokens.
-The new token is minted and assigned to the owner.
-The token's URI is set (pointing to the metadata).
-A new Ticket struct is created and added to the tickets array.
-The ownership and price histories are initialized.
-The TicketCreated event is emitted.
-The function returns the tokenId of the newly created ticket.
-Buy a Ticket:
-
-solidity
-Copy code
-function buyTicket(uint256 tokenId) public payable {
-    Ticket storage ticket = tickets[tokenId];
-    require(msg.value >= ticket.price, "Insufficient funds");
-    require(ticket.copies > 0, "No more copies available");
-
-    address previousOwner = ownerOf(tokenId);
-    address newOwner = msg.sender;
-
-    _transferFrom(previousOwner, newOwner, tokenId);
-
-    ownershipHistory[tokenId].push(newOwner);
-    priceHistory[tokenId].push(msg.value);
-
-    ticket.copies--;
-
-    address(uint160(previousOwner)).transfer(msg.value);
-
-    emit TicketTransferred(tokenId, previousOwner, newOwner, msg.value);
-}
-buyTicket allows users to purchase a ticket:
-It retrieves the ticket by tokenId.
-It checks if the payment is sufficient and if there are copies available.
-It transfers the token from the previous owner to the new owner.
-It updates the ownership and price histories.
-It decreases the number of available copies.
-It transfers the payment to the previous owner.
-It emits the TicketTransferred event.
-Get Ownership History:
-
-solidity
-Copy code
-function getOwnershipHistory(uint256 tokenId) public view returns (address[] memory) {
-    return ownershipHistory[tokenId];
-}
-getOwnershipHistory returns the ownership history of a ticket given its tokenId.
-Get Price History:
-
-solidity
-Copy code
-function getPriceHistory(uint256 tokenId) public view returns (uint256[] memory) {
-    return priceHistory[tokenId];
-}
-getPriceHistory returns the price history of a ticket given its tokenId.
-Get Copies:
-
-solidity
-Copy code
-function getCopies(uint256 tokenId) public view returns (uint256) {
-    return tickets[tokenId].copies;
-}
-getCopies returns the number of remaining copies for a given ticket by tokenId.
-
+`function registerTicket(address owner, string memory tokenURI, uint256 price, uint256 copies) public returns (uint256) {`
+        `uint256 tokenId = totalSupply();`
+        `_mint(owner, tokenId);`
+        `_setTokenURI(tokenId, tokenURI);`
+        `tickets.push(Ticket(tokenId, price, copies));`
+        `ownershipHistory[tokenId].push(owner);`
+        `priceHistory[tokenId].push(price);`
+        `emit TicketCreated(tokenId, owner, price, copies);`
+        `return tokenId;}`
 
 
 ## Technical Explanation Demo 
