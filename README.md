@@ -175,6 +175,7 @@ This is when a new tokenId is generated based on the current quantity of tokens 
         `priceHistory[tokenId].push(price);`
         `emit TicketCreated(tokenId, owner, price, copies);`
         `return tokenId;}`
+	
 6. Buying the Ticket 
 The buyTicket allows users to purchase a ticket by retrieving the ticket by tokenId. It then checks if the payment is sufficient and if there are copies available. This allows the transfers of the token from the previous owner to the new owner. Additionally, it updates the ownership and price histories when the payment is recieved by the previous owner.
 
