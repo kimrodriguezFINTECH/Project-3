@@ -234,8 +234,8 @@ Select the desired option to proceed.
 	Click 'Generate Image'.
 	Click 'Create NFT'.
 	The generated image and its URL will be displayed.
-(image1)
 
+![Alt text](Images/generate_via_AI.png)
 
 	* Upload Image:
 	Choose 'Upload Image'.
@@ -244,12 +244,16 @@ Select the desired option to proceed.
 	Click 'Create NFT'.
 	The uploaded image and its IPFS hash will be displayed.
 
+![Alt text](Images/generate_upload.png) 
+
 ### Step 2: Marketplace Transactions
 
 * Viewing Available NFTs:
 
 The user navigates to the 'Marketplace' section from the sidebar.
 The application displays a list of available NFTs with details such as cover art, number of copies, price, and transaction history.
+
+![Alt text](Images/marketplace.png)
 
 * Purchasing an NFT:
 
@@ -258,6 +262,8 @@ The user enters their Ethereum address.
 The user clicks the "Buy NFT" button.
 Upon successful purchase, the transaction receipt is displayed.
 The ownership details and number of copies available are updated.
+
+![Alt text](Images/transaction.png)
 
 ### Step 3: Reselling NFTs
 
@@ -268,6 +274,12 @@ The user enters their Ethereum address owned the NFT for reselling.
 The user sets the new price for the NFT in Ether.
 Upon successful resale purchase, the transaction receipt is displayed.
 The ownership details and number of copies available are updated.
+
+![Alt text](Images/resell.png)
+
+The NFT resold will be listed in the marketplace again with the new price.
+
+![Alt text](Images/resell_list_marketplace.png)
 
 ## Conclusion
 In conclusion, our application leverages the power of NFTs and blockchain technology to address and resolve the prevalent issues in traditional ticketing systems. Additionally, our applicaiton aligns with recent developments and industry demands for a more secure, transparent, and user-centric solutions in event management. This ensures a fairer and more enjoyable experience for all stakeholders involved.
