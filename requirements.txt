@@ -1,0 +1,7 @@
+streamlit
+openai
+requests
+web3
+python-dotenv
+pandas
+streamlit-lottie
